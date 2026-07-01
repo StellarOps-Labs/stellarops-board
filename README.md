@@ -1,36 +1,90 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# StellarOps Board
 
-## Getting Started
+Contributor-readiness dashboard for Stellar and Soroban maintainers.
 
-First, run the development server:
+StellarOps Board is an open-source dashboard from StellarOps Labs for reviewing issue quality, label coverage, repository readiness, and maintainer workflow status. The MVP runs in mock mode: no GitHub API token is required, and the included data is intentionally local and transparent.
+
+## Why This Exists
+
+Many Stellar and Soroban repositories want contributors, but maintainers still need a fast way to check whether their backlog is ready. A contributor-ready issue needs a clear problem statement, expected behavior, likely files, acceptance criteria, difficulty, labels, and ecosystem relevance. StellarOps Board turns those signals into a review surface.
+
+## Features
+
+- Landing page explaining issue readiness and maintainer workflow value
+- Dashboard summary for readiness, ready issues, repo health, and label coverage
+- Issue readiness scoring from 0 to 100 with missing fields and suggestions
+- Filterable issue table by difficulty, label, and readiness status
+- Label coverage tracking for common contributor labels
+- Repo health cards for README, contributing guide, license, docs, tests, CI, templates, open issues, and labels
+- Maintainer workflow status for drafted, reviewed, labeled, ready, PR review, and CI states
+- Vitest and React Testing Library coverage for logic, hooks, and UI components
+
+## Tech Stack
+
+- Next.js Pages Router
+- React
+- TypeScript
+- Tailwind CSS
+- Vitest
+- React Testing Library
+- ESLint
+- GitHub Actions CI
+
+## Quick Start
+
+```bash
+npm install
+npm run dev
+```
+
+Open `http://localhost:3000`.
+
+## Development Commands
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm run lint
+npm run typecheck
+npm run test
+npm run test:watch
+npm run build
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Project Structure
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```text
+src/components   Reusable dashboard, layout, issue, label, and health UI
+src/hooks        Filter and scoring hooks used by dashboard components
+src/lib          Readiness, label coverage, repo health, and workflow logic
+src/pages        Next.js Pages Router routes
+src/types        Shared TypeScript domain types
+src/utils        Constants, formatting, and mock data
+tests            Unit and component tests
+docs             Maintainer and contributor documentation
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Dashboard Workflow
 
-## Learn More
+1. Review summary metrics for average readiness, ready issues, repo health, and labels.
+2. Check weak issues in the readiness score panel.
+3. Filter the issue table by difficulty, label, or readiness status.
+4. Fix missing fields such as acceptance criteria or Stellar/Soroban relevance.
+5. Review label coverage and repository health before publishing contributor calls.
 
-To learn more about Next.js, take a look at the following resources:
+## Relationship To StellarOps Kit
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+StellarOps Kit helps maintainers create better issues. StellarOps Board helps maintainers review, organize, and monitor those issues after they exist. This project is independent and does not claim official affiliation with Stellar, Soroban, Drips Wave, or GrantFox.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Roadmap
 
-## Deploy on Vercel
+- Phase 1: mock issue dashboard, readiness scoring, label coverage, repo health cards, filters, docs, tests, and CI
+- Phase 2: GitHub issue import, repository scan, persistent filters, screenshot docs, accessibility improvements
+- Phase 3: GitHub API integration, organization dashboard, contributor analytics, PR tracking, project board export, StellarOps Kit integration
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Contributing
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Read [CONTRIBUTING.md](CONTRIBUTING.md), choose a focused issue, run tests locally, and keep copy honest about mock mode. Good first contributions include improving docs, adding test cases, refining accessibility, or preparing GitHub import scaffolding.
+
+## License
+
+MIT. See [LICENSE](LICENSE).
