@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # StellarOps Board
 
 Contributor-readiness dashboard for Stellar and Soroban maintainers.
@@ -88,3 +89,7 @@ Read [CONTRIBUTING.md](CONTRIBUTING.md), choose a focused issue, run tests local
 ## License
 
 MIT. See [LICENSE](LICENSE).
+=======
+# stellarops-board
+Dashboard for reviewing Stellar/Soroban contributor issues, labels, readiness, and maintainer workflow status.
+>>>>>>> ec0a78ab4ed36cade76e4bea6f5fc57dd07c055f
