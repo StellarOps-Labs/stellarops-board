@@ -82,6 +82,12 @@ StellarOps Kit helps maintainers create better issues. StellarOps Board helps ma
 - Phase 2: GitHub issue import, repository scan, persistent filters, screenshot docs, accessibility improvements
 - Phase 3: GitHub API integration, organization dashboard, contributor analytics, PR tracking, project board export, StellarOps Kit integration
 
+## Screenshots
+
+StellarOps Board includes screenshot-based documentation for the main dashboard, issue readiness view, filtering workflow, and maintainer-focused sections.
+
+See the [screenshot guide](docs/screenshots.md) for the full visual walkthrough.
+
 ## Contributing
 
 Read [CONTRIBUTING.md](CONTRIBUTING.md), choose a focused issue, run tests locally, and keep copy honest about mock mode. Good first contributions include improving docs, adding test cases, refining accessibility, or preparing GitHub import scaffolding.
