@@ -22,6 +22,12 @@ const docs = [
     icon: GitBranch,
   },
   {
+    href: "/docs/project-board-export.md",
+    title: "Project Board Export",
+    body: "Share readiness snapshots through GitHub Projects, spreadsheets, and planning docs.",
+    icon: ClipboardCheck,
+  },
+  {
     href: "/docs/contributor-workflows.md",
     title: "Contributor Workflows",
     body: "See how clear issues help contributors choose and complete work.",
