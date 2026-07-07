@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # StellarOps Board
 
 Contributor-readiness dashboard for Stellar and Soroban maintainers.
@@ -18,6 +17,7 @@ Many Stellar and Soroban repositories want contributors, but maintainers still n
 - Label coverage tracking for common contributor labels
 - Repo health cards for README, contributing guide, license, docs, tests, CI, templates, open issues, and labels
 - Maintainer workflow status for drafted, reviewed, labeled, ready, PR review, and CI states
+- Project board export guidance for sharing readiness snapshots outside the app
 - Vitest and React Testing Library coverage for logic, hooks, and UI components
 
 ## Tech Stack
@@ -71,6 +71,7 @@ docs             Maintainer and contributor documentation
 3. Filter the issue table by difficulty, label, or readiness status.
 4. Fix missing fields such as acceptance criteria or Stellar/Soroban relevance.
 5. Review label coverage and repository health before publishing contributor calls.
+6. Use [the project board export guide](docs/project-board-export.md) when sharing snapshots through GitHub Projects, spreadsheets, or planning documents.
 
 ## Relationship To StellarOps Kit
 
@@ -95,7 +96,3 @@ Read [CONTRIBUTING.md](CONTRIBUTING.md), choose a focused issue, run tests local
 ## License
 
 MIT. See [LICENSE](LICENSE).
-=======
-# stellarops-board
-Dashboard for reviewing Stellar/Soroban contributor issues, labels, readiness, and maintainer workflow status.
->>>>>>> ec0a78ab4ed36cade76e4bea6f5fc57dd07c055f
